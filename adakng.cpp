@@ -2,6 +2,7 @@
 #include <bits/stdc++.h>
 
 int main() {
+    clock_t tStart = clock();
     int t, r, c, k, width, height;
     std::cin >> t;
     while (t--) {
@@ -92,4 +93,5 @@ int main() {
         }
         std::cout << width * height << std::endl;
     }
+    printf ("Time taken: %.2fs\n", (double)(clock() - tStart)/CLOCKS_PER_SEC);
 }
